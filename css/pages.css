@@ -13,12 +13,22 @@
     --text-gray: #E5E7EB;
   }
 
+  a, button {
+    cursor: pointer;
+  }
+
   ol, ul {
     list-style: none;
   }
 
   ul {
     display: flex;
+    margin: 10px;
+  }
+
+  li {
+    margin:5px;
+    font-size:20px;
   }
 
   header {
@@ -32,7 +42,126 @@
     height: 70px;
   }
 
+  main {
+    padding: 10px;
+  }
+
+  section {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size:48px;
+    color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+  }
+
   img {
-    width: 380px;
+    width: 340px;
     height: 380px;
   }
+
+  figcaption {
+    margin-bottom: 5px;
+  }
+
+  article {
+    border: 1px solid var(--primary-blue);
+    width: 360px;    
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+  }
+
+  input[type=radio] {
+    border: 1px solid var(--primary-blue);
+    padding: 0.5em;
+    -webkit-appearance: none;
+  }
+  
+  input[type=radio]:checked {
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) no-repeat center center;
+    background-size: 9px 9px;
+  }
+  
+  input[type=radio]:focus {
+    outline-color: transparent;
+  }
+
+  span{
+    padding: 5px;
+  }
+
+  button{
+    background-color: var(--secondary-blue);
+    font-size: 20px;
+    border-radius: 10px;    
+    border: none;
+    color: var(--text-white);
+    width: 214px;
+    height: 40px;
+  }
+
+  button:hover {
+    opacity: 0.7;
+    transition:  0.7s ease;
+  }
+
+  #price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+/* xs */
+@media (max-width: 475px) {
+  img {
+    width: 100%;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  section {
+    width: 100%;
+  }
+ 
+  main {
+    margin: 2px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {  
+  img {
+    width: 275px;
+  }
+
+  article {
+    width: 320px;
+  }
+
+  section {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {  
+  section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
