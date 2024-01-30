@@ -52,6 +52,7 @@
     width: 80%;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   h1 {
@@ -118,3 +119,49 @@
     font-size: 24px;
     font-weight: bold;
   }
+
+
+/* xs */
+@media (max-width: 475px) {
+  img {
+    width: 100%;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  section {
+    width: 100%;
+  }
+ 
+  main {
+    margin: 2px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {  
+  img {
+    width: 275px;
+  }
+
+  article {
+    width: 320px;
+  }
+
+  section {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {  
+  section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
