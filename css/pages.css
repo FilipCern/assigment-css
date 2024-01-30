@@ -42,6 +42,10 @@
     height: 70px;
   }
 
+  main {
+    padding: 10px;
+  }
+
   section {
     margin: auto;
     display: flex;
