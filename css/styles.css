@@ -12,7 +12,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  vertical-align:baseline;
+  /* border:black solid 1px; */
 }
 a{
   text-decoration: none;
@@ -27,6 +27,7 @@ a{
 .wrapper{
   max-width: 1191px;
   margin:0 auto;
+  border: black solid 1px;
 } 
 
 header{
