@@ -11,7 +11,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto";
   /* border:black solid 1px; */
 }
 a{
@@ -86,7 +86,6 @@ article button{
   background-color: #ffffff; 
   text-align: center;
   padding: 50px 20px;
-  font-family: "Poppins", sans-serif;
   line-height: 1.4; 
   margin: 0 auto; 
 }
@@ -111,7 +110,6 @@ article button{
   color: #333;
   text-align: center;
   padding: 40px 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .newsletter-container h2 {
