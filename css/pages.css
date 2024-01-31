@@ -166,17 +166,19 @@ button:hover {
 
 }
 
-.btn-top {
-  width: 70px;
-  height: 30px;
-  background: var(--secondary-blue);
-  color: var(--text-white);  
+.btn-top {  
+  background: transparent; 
+  width: auto;
+  height: auto;  
+  padding: 0.5em 1em;
+  border: 1px solid var(--secondary-blue);
 }
 
 .go-top { 
   width: 100px;
   height: 100px;  
   text-align: center;
+  color: var(--secondary-blue); 
   
 }
 
