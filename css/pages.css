@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style:none;
+  border:0;   
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --primary-blue: #1F2937;
+  --secondary-blue: #3882F6;
+  --text-white: #F9FAF8;
+  --text-gray: #E5E7EB;
+}
+
+a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+a, button, input[type=radio], input[type=radio] + span {
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-blue);
+  height: 4.6875rem;
+  padding: 1rem;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menulink {
+  color: var(--text-gray); 
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid transparent; 
+  padding: 5px;
+
+}
+
+.menulink:hover {
+  border: 1px solid var(--secondary-blue); 
+  padding: 5px;
+  animation: fadeoutBorder 0.9s ease;
+}
+
+@keyframes fadeoutBorder {
+  from {  border: 1px solid var(--text-white);  } 
+  to {  border: 1px solid var(--secondary-blue); }
+}
+
+.label-menu,
+.checkbox {
+  display: none;
+}
+
+
+section {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-size:48px;
+  color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+img {
+  width: 340px;
+  height: 380px;
+}
+
+figcaption {
+  margin-bottom: 5px;
+}
+
+article {
+  border: 1px solid var(--primary-blue);
+  width: 360px;    
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: center;
+}
+
+input[type=radio] {
+  border: 1px solid var(--primary-blue);
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) no-repeat center center;
+  background-size: 9px 9px;
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+
+.letter-size{
+  padding: 5px;
+}
+
+.size {
+  display:flex;
+  margin: 10px;
+}
+
+button{
+  background-color: var(--secondary-blue);
+  font-size: 20px;
+  border-radius: 10px;    
+  border: none;
+  color: var(--text-white);
+  width: 214px;
+  height: 40px;
+}
+
+button:hover {
+  opacity: 0.7;
+  transition:  0.7s ease;
+}
+
+#price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 475px) {
+  img {
+    width: 100%;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  main {
+    margin: 2px;
+  }
+ 
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--primary-blue);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu li {
+    margin: 20px;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    border-top: 5px solid;
+    width: 25px;
+  } 
+
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburger {
+    border-top-color: transparent;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .checkbox:checked ~ .label-menu .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
+ @media (min-width: 768px) {  
+  img {
+    width: 275px;
+  }
+
+  article {
+    width: 320px;
+  }
+
+  section {
+    margin: 0;
+    width: 100%;
+  }
+ 
+} 
+
+ @media (min-width: 1024px) {  
+  section {
+    width: 80%;
+    margin: auto;
+  }
+} 
+  
