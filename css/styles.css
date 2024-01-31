@@ -39,7 +39,8 @@ img:hover{
 figure{
   display: flex;
   align-self: flex-end;
-  flex-direction: column-reverse; 
+  flex-direction: column; 
+  flex-wrap: wrap;
   height: 100%;
   margin-top: 0;
 }
