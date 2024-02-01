@@ -11,12 +11,16 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Roboto";
   /* border:black solid 1px; */
+  font-family: "Roboto", sans-serif;
 }
 a{
   text-decoration: none;
   color: var(--text-white)
+}
+
+li{
+  list-style: none;
 }
 
 .bg{
@@ -27,17 +31,16 @@ a{
 .wrapper{
   max-width: 1191px;
   margin:0 auto;
-  border: black solid 1px;
 } 
 
 header{
-  border:red;
   width: 100%;
 }
 header .wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 
 a img{
@@ -45,9 +48,38 @@ a img{
 }
 
 nav{
-  width: 30%;
+  width: 40%;
+}
+
+nav ul{
+
+  width: 100%;
   display: flex;
   justify-content:space-between;
+}
+
+nav a{
+  padding:0 5px;
+  position: relative;
+}
+
+.toggle-button{
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #eee3e3;
+  border-radius: 10px;
+
 }
 
 section{
@@ -58,7 +90,7 @@ section{
 article h1{
   font-size: 48px;
   color: var(--text-white);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 article p{
@@ -81,7 +113,6 @@ article button{
   margin-top: 45px;
   border: none;
 }
-
 .quote-section {
   background-color: #ffffff; 
   text-align: center;
@@ -158,4 +189,165 @@ article button{
 .copyright-container p {
   font-size: 0.75em;
   color: #666;
+=======
+/* NAVBAR MENU ANIMATION ON HOVER */
+
+nav li a::after{
+  content: "";
+  position: absolute;
+  background-color: var(--text-white) ;
+  height: 2px;
+  border-radius: 1px;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s ;
+  width: 0;
+}   
+
+li a:hover::after{
+  width: 100%;
+}
+
+button:hover{
+  opacity: 0.7;
+  transition:  0.7s ease;
+}
+
+/* md */
+@media (max-width: 768px) {  
+
+  .bg{
+    padding: 10px;
+  }
+
+  .toggle-button{
+    display:flex;
+  }
+
+  header .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav{
+    display: none;
+    margin: auto;
+    width: 90%;
+    background-color: var(--secondary-blue);
+
+  }
+  nav ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  nav li{
+    text-align: center;
+    padding: 10px;
+  }
+
+  article h1{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  article p {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  button{
+    padding: 13px 40px;
+    font-size: 25px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+
+
+  article h1{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  article p {
+    font-size: 15px;
+  }
+
+  button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 25px;
+  }
+
+}
+/* Overview styling */
+#overview{
+  margin: 150px 168px;
+  max-width: 1191px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-header{
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  line-height: 56px;
+  margin: 0;
+  align-self: center;
+}
+
+#pics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1191px;
+}
+
+img:hover{
+  border-radius: 9px;
+  filter: drop-shadow(5px 5px 9px rgba(82, 83, 83, 0.301));
+}
+figure{
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+figcaption{
+  margin-top: 25px;
+}
+
+figcaption > a{
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 15px;
+  width: 100%;
+  color: var(--text-white);
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+}
+
+figcaption > a:hover{
+  color: var(--text-white);
+  background-color: var(--secondary-blue);
+}
+
+#kid{
+  height: 314px;
+  width: 287px;
+}
+#women{
+  height: 414px;
+  width: 287px ;
+}
+#men{
+  height: 514px;
+  width: 287px;
 }
