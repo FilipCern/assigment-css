@@ -35,11 +35,17 @@ ol, ul {
   list-style: none;
 }
 
-.header {
+.header {  
+  background-color: var(--primary-blue);
+
+}
+
+nav {
+  width: 70%;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-blue);
+  justify-content: space-between;  
   height: 4.6875rem;
   padding: 1rem;
 }
@@ -91,9 +97,7 @@ section {
 
 h1 {
   font-size:48px;
-  color: var(--primary-blue);
-  /* display: flex;
-  justify-content: center; */
+  color: var(--primary-blue);  
   text-align: center;
   margin: 25px;
 }
