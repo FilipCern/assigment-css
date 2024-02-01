@@ -208,8 +208,10 @@ button:hover{
 }
 /* Overview styling */
 #overview{
-  margin: 168px;
-  height: 100vh;
+  margin: 150px 168px;
+  max-width: 1191px;
+  display: flex;
+  flex-direction: column;
 }
 
 .overview-header{
@@ -218,18 +220,16 @@ button:hover{
   color: var(--primary-blue);
   line-height: 56px;
   margin: 0;
+  align-self: center;
 }
 
 #pics{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 1191px;
 }
 
-img{
-  width: 300px;
-  height: 478px;
-}
 img:hover{
   border-radius: 9px;
   filter: drop-shadow(5px 5px 9px rgba(82, 83, 83, 0.301));
@@ -239,8 +239,7 @@ figure{
   align-self: flex-end;
   flex-direction: column; 
   flex-wrap: wrap;
-  height: 100%;
-  margin-top: 0;
+  margin-top: 35px;
 }
 
 figcaption{
@@ -255,6 +254,7 @@ figcaption > a{
   width: 100%;
   color: var(--text-white);
   background-color: var(--primary-blue);
+  border-radius: 10px;
 }
 
 figcaption > a:hover{
@@ -263,11 +263,14 @@ figcaption > a:hover{
 }
 
 #kid{
-  height: 278px;
+  height: 314px;
+  width: 287px;
 }
 #women{
   height: 414px;
+  width: 287px ;
 }
 #men{
-  height: 557px;
+  height: 514px;
+  width: 287px;
 }
