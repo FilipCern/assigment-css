@@ -21,6 +21,8 @@ Black Friday - product sales for everyone with promotion every day<br>
 Responsive website with a menu bar made only with HTML and CSS<br>
 Demo:
 
+https://github.com/FilipCern/assigment-css/assets/75817559/f55a1a64-0892-4fa3-aaa1-c756d5ec05de
+
 ## 👩‍💻 Squad
 | Dev    | Github |
 | -------- | ------- |
