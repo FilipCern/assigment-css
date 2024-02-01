@@ -140,7 +140,7 @@ input[type=radio]:focus {
   margin: 10px;
 }
 
-button{
+article button {
   background-color: var(--secondary-blue);
   font-size: 20px;
   border-radius: 10px;    
@@ -150,7 +150,7 @@ button{
   height: 40px;
 }
 
-button:hover {
+article button:hover {
   opacity: 0.7;
   transition:  0.7s ease;
 }
@@ -309,3 +309,60 @@ main ~ div {
   }
 } 
   
+.footer {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.newsletter-container h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.newsletter-container p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.newsletter-container form {
+  display: inline-block;
+}
+
+.newsletter-container input[type="email"] {
+  padding: 10px;
+  margin-right: -4px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.newsletter-container button {
+  padding: 10px;
+  background-color: var(--secondary-blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  margin: 0 10px;
+}
+
+.social-container a:hover {
+  color: #666;
+}
+
+.copyright-container p {
+  font-size: 0.75em;
+  color: #666;
+}
+
+.social-container img {
+  width: 16px; 
+  height: auto; 
+}
