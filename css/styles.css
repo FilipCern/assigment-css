@@ -310,12 +310,13 @@ button:hover{
   }
 }
 
-/* Overview styling */
 #overview{
-  margin: 150px 168px;
-  max-width: 1191px;
+  margin: 150px auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 10px;
 }
 
 .overview-header{
@@ -323,15 +324,16 @@ button:hover{
   font-weight: 800;
   color: var(--primary-blue);
   line-height: 56px;
-  margin: 0;
   align-self: center;
 }
 
 #pics{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 1191px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 img:hover{
@@ -339,23 +341,25 @@ img:hover{
   filter: drop-shadow(5px 5px 9px rgba(82, 83, 83, 0.301));
 }
 figure{
+  border: 1px solid var(--secondary-blue);
   display: flex;
-  align-self: flex-end;
   flex-direction: column; 
-  flex-wrap: wrap;
-  margin-top: 35px;
+  padding: 12px;
+  align-items: center;
+  border-radius: 10px;
+  width: 232px;
+  height: 250px;
 }
 
 figcaption{
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 figcaption > a{
   text-decoration: none;
-  font-size: 36px;
+  font-size: 17px;
   font-weight: 600;
-  padding: 15px;
-  width: 100%;
+  padding: 2px 25px;
   color: var(--text-white);
   background-color: var(--primary-blue);
   border-radius: 10px;
@@ -366,17 +370,23 @@ figcaption > a:hover{
   background-color: var(--secondary-blue);
 }
 
-#kid{
-  height: 314px;
-  width: 287px;
+#kid,#women,#men,#all{
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
 }
-#women{
-  height: 414px;
-  width: 287px ;
-}
-#men{
-  height: 514px;
-  width: 287px;
+
+/* Make it responsive! */
+@media (max-width:768px) {
+  #overview{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
 }
 
 .quote-section {
