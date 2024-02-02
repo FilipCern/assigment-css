@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header class="header">        
+        <nav class="nav">
+          <a id="logo" href="../index.html">
+            <img id="logo" src="../images/logo.webp" alt="Black Friday logo">
+          </a>      
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox" class="label-menu">
+            <span class="hamburger"></span>        
+          </label>      
+          <ul class="menu" >                
+            <li><a class="menulink" href="../index.html">Home</a></li>
+            <li><a class="menulink"  href="./woman.html">Woman</a></li>
+            <li><a class="menulink" href="./man.html">Man</a></li>
+            <li><a class="menulink"  href="./kids.html">Kids</a></li>
+            <li><a class="menulink"  href="./contact.html">Contact Us</a></li>
+        </ul>     
+        </nav>
+      </header>  
+    <div class="container contact">
+        <div class="contact-section">
+            <div class="contact-info">
+                <img src="../images/contact.png">
+                <h2>Contact Information</h2>
+                <p><a href="https://www.google.com/maps"><img class="icon" src="../images/location-dot-solid.svg"> 123 Fashion Avenue, New York, NY 10001</a></p>
+                <p><a href="mailto:info@blackfriday.com"><img class="icon" src="../images/envelope.svg"> info@fashionecommerce.com</a></p>
+                <p><a href="tel:+1 (123) 456-7890"><img class="icon" src="../images/phone.svg">  +1 (123) 456-7890</a></p>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+                <form id="contact-form" method="post" action="">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Black Friday 2024. All rights reserved.</p>
+    <footer>
+</body>
+</html>
