@@ -387,6 +387,9 @@ figcaption > a:hover{
     padding: 15px;
   }
   
+  .overview-header{
+    font-size: 24px;
+  }
 }
 
 .quote-section {
