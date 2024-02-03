@@ -22,14 +22,9 @@ li{
   list-style: none;
 }
 
-.bg{
+.bg, header{
   background-color: var(--primary-blue);
   
-}
-
-.header {  
-  background-color: var(--primary-blue);
-
 }
 
 nav {
@@ -88,25 +83,25 @@ section{
   justify-content: space-between;
   align-items: center;
 }
-article h1{
+aside h1{
   font-size: 48px;
   color: var(--text-white);
   font-weight: 900;
 }
 
-article p{
+aside p{
   color: var(--text-gray);
   opacity: 0.8;
   margin-top: 25px;
   font-size: 18px;
 }
 
-article img{
+aside img{
   max-width: 100%;
   height: auto; 
 }
 
-article button{
+aside button{
   padding: 17px 65px;
   background-color: var(--secondary-blue);
   font-size: 32px;
@@ -258,12 +253,12 @@ figcaption > a:hover{
 
 /* xs */
 @media (max-width: 475px) {
-  article h1{
+  aside h1{
     font-size: 30px;
     font-weight: 600;
   }
 
-  article p {
+  aside p {
     font-size: 15px;
   }
 
@@ -278,12 +273,12 @@ figcaption > a:hover{
 /* md */
 @media (max-width: 768px) { 
   
-  article h1{
+  aside h1{
     font-size: 40px;
     font-weight: 900;
   }
 
-  article p {
+  aside p {
     margin-top: 15px;
     font-size: 16px;
   }
@@ -390,5 +385,15 @@ figcaption > a:hover{
     flex-direction: column;
     align-items: center;
     padding: 15px;
+  }
+  .overview-header{
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 40px;
+  
+  }
+
+  .quote-line {
+    font-size: 25px;
   }
 }
