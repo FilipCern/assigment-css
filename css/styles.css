@@ -118,7 +118,6 @@ article button{
 .quote-section {
   background-color: #ffffff; 
   text-align: center;
-  padding: 50px 20px;
   line-height: 1.4; 
   margin: 0 auto; 
 }
@@ -136,6 +135,7 @@ article button{
   color: #F9FAF8;
   text-align: center;
   padding: 40px 0;
+  margin-top: auto;
 }
 .cta-section {
   background-color: #4D7CFF;
